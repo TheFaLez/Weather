@@ -322,4 +322,8 @@
   .hour-title {
     font-size: 22px;
   }
+
+  .hour-weather{
+    font-size: 10px;
+  }
 }
