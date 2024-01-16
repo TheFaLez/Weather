@@ -48,7 +48,7 @@ const Weather = () => {
           </div>
 
           <div className="weather-main">
-            <h2 className='weather-main-title'>{weather.current.temp_f}°</h2>
+            <h2 className='weather-main-title'>{weather.current.temp_c}°</h2>
             <h3 className='weather-main-text'>{weather.current.condition.text}
               <img src={weather.current.condition.icon} />
             </h3>
@@ -72,7 +72,7 @@ const Weather = () => {
 
           <div className="weather-hour-content">
             <h2 className='weather-content-title'>
-              {weather.current.temp_f}°
+              {weather.current.temp_c}°
             </h2>
 
             <div className="weather-content-container">
@@ -87,19 +87,65 @@ const Weather = () => {
             </div>
           </div>
 
-          <h5 className='felllike'>Feels like {weather.current.feelslike_f}°</h5>
+          <h5 className='felllike'>Feels like {weather.current.feelslike_c}°</h5>
           <h3 className='content-postscript'>{weather.current.condition.text}</h3>
 
 
           <div className="weather-hour-cards">
             <h2 className='hour-title'>Hourly Forecast</h2>
             {
-              weather.forecast.forecastday[0].hour.map((value, index) => {
-                if (index < 6) {
+              weather.forecast.forecastday[0].hour.map((value, index ) => {
+                console.log(index);
+                if (index == 6 ) {
                   return (
                     <div className="weather-card" key={value.time}>
-                      <h4 className='hour-time'> {index + 1} {value.time > "12:00" ? "AM" : "PM"}</h4>
-                      <h3>{value.temp_f}°</h3>
+                      <h4 className='hour-time'> 6 AM</h4>
+                      <h3>{value.temp_c}°</h3>
+                      <h4 className='hour-weather'>{value.condition.text}</h4>
+                    </div>
+                  )
+                }
+                if (index == 9) {
+                  return (
+                    <div className="weather-card" key={value.time}>
+                      <h4 className='hour-time'> 9 AM</h4>
+                      <h3>{value.temp_c}°</h3>
+                      <h4 className='hour-weather'>{value.condition.text}</h4>
+                    </div>
+                  )
+                }
+                if (index == 12) {
+                  return (
+                    <div className="weather-card" key={value.time}>
+                      <h4 className='hour-time'> 12 AM</h4>
+                      <h3>{value.temp_c}°</h3>
+                      <h4 className='hour-weather'>{value.condition.text}</h4>
+                    </div>
+                  )
+                }
+                if (index == 15) {
+                  return (
+                    <div className="weather-card" key={value.time}>
+                      <h4 className='hour-time'> 3 PM</h4>
+                      <h3>{value.temp_c}°</h3>
+                      <h4 className='hour-weather'>{value.condition.text}</h4>
+                    </div>
+                  )
+                }
+                if (index == 18) {
+                  return (
+                    <div className="weather-card" key={value.time}>
+                      <h4 className='hour-time'> 6 PM</h4>
+                      <h3>{value.temp_c}°</h3>
+                      <h4 className='hour-weather'>{value.condition.text}</h4>
+                    </div>
+                  )
+                }
+                if (index == 21) {
+                  return (
+                    <div className="weather-card" key={value.time}>
+                      <h4 className='hour-time'> 9 PM</h4>
+                      <h3>{value.temp_c}°</h3>
                       <h4 className='hour-weather'>{value.condition.text}</h4>
                     </div>
                   )
