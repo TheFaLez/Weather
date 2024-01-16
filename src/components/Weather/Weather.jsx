@@ -16,12 +16,15 @@ const Weather = () => {
   }
 
   const searchBtn = () => {
-    if (searchState) {
-      dispatch(fetchWeather(searchState))
-    }
-    else {
-      return
-    }
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=fa1e04a97a1048989cb20516241501%20&q=${searchState}&aqi=no`)
+      .then((response) => {
+        if (response.ok) {
+          dispatch(fetchWeather(searchState))
+        }
+        else {
+          return
+        }
+      })
     setSearchState('')
   }
 
