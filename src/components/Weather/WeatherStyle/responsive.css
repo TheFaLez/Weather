@@ -17,11 +17,6 @@
     flex-direction: column;
   }
 
-  .searchicon {
-    top: 8px;
-    right: 15px;
-  }
-
   .weather-day {
     width: 100%;
     border-radius: 0;
@@ -51,17 +46,6 @@
     row-gap: 15px;
     column-gap: 100px;
     justify-content: center;
-  }
-
-
-  .searchicon {
-    top: 8px;
-    right: 15px;
-  }
-
-  .weather-card {
-    width: 80px;
-    height: 120px;
   }
 
   .weather-hour-title {
@@ -96,11 +80,6 @@
     flex-direction: column;
   }
 
-  .searchicon {
-    top: 8px;
-    right: 15px;
-  }
-
   .weather-day {
     width: 100%;
     border-radius: 0;
@@ -130,17 +109,6 @@
     row-gap: 15px;
     column-gap: 100px;
     justify-content: center;
-  }
-
-
-  .searchicon {
-    top: 8px;
-    right: 15px;
-  }
-
-  .weather-card {
-    width: 80px;
-    height: 120px;
   }
 
   .weather-hour-title {
@@ -175,11 +143,6 @@
     flex-direction: column;
   }
 
-  .searchicon {
-    top: 8px;
-    right: 15px;
-  }
-
   .weather-day {
     width: 100%;
     border-radius: 0;
@@ -193,6 +156,7 @@
   }
 
   .weather-hour {
+
     width: 100%;
     height: 600px;
     padding: 30px 30px 50px;
@@ -204,20 +168,10 @@
     padding: 20px 70px;
   }
 
-.weather-date {
-  row-gap: 15px;
-  column-gap: 100px;
-  justify-content: center;
-}
-
-.searchicon {
-  top: 8px;
-  right: 15px;
-}
-
-  .weather-card {
-    width: 80px;
-    height: 120px;
+  .weather-date {
+    row-gap: 15px;
+    column-gap: 100px;
+    justify-content: center;
   }
 
   .weather-hour-title {
@@ -238,6 +192,7 @@
   }
 
 }
+
 @media (max-width: 576px) and (min-width: 400px) {
   .weather {
     padding: 0;
@@ -248,11 +203,6 @@
     row-gap: 15px;
     column-gap: 100px;
     justify-content: center;
-  }
-
-  .searchicon {
-    top: 8px;
-    right: 15px;
   }
 
   .weather-back {
@@ -283,12 +233,7 @@
 
   .weather-hour-cards {
     gap: 25px;
-    padding: 20px 70px;
-  }
-
-  .weather-card {
-    width: 80px;
-    height: 120px;
+    padding: 20px 50px;
   }
 
   .weather-hour-title {
@@ -319,11 +264,6 @@
     row-gap: 15px;
     column-gap: 100px;
     justify-content: center;
-  }
-
-  .searchicon {
-    top: 8px;
-    right: 15px;
   }
 
   .weather-back {
@@ -364,7 +304,6 @@
 
   .weather-card {
     width: 80px;
-    height: 120px;
   }
 
   .weather-hour-title {
