@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 120px;
 }
 
 .weather-back {
@@ -17,7 +16,7 @@
 
 .weather-day {
   width: 70%;
-  height: 90vh;
+  height: 585px;
   border-radius: 20px 0 0;
   padding: 28px 30px;
   position: relative;
@@ -27,8 +26,8 @@
 
 .weather-hour {
   width: 30%;
-  height: 90vh;
-  padding: 10px;
+  height: 585px;
+  padding: 5px;
   border-radius: 0 20px 20px 0;
   background-color: rgb(235, 235, 235);
 }
@@ -66,7 +65,7 @@
   top: 0;
   right: 10px;
   cursor: pointer;
-  width: 40px; 
+  width: 40px;
   height: 35px;
   display: flex;
   align-items: center;
@@ -83,14 +82,17 @@
 
 .weather-main-title {
   font-size: 120px;
+
 }
 
 .weather-main-text {
-  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+}
+
+.weather-main-text h2 {
+  font-size: 35px;
 }
 
 .weather-postcript-container {
@@ -165,7 +167,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   padding: 5px;
   margin-top: 0px;
 }

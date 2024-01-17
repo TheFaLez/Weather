@@ -5,66 +5,23 @@
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
+
   .weather {
     padding: 0;
-    height: auto;
   }
 
   .weather-back {
     border-radius: 0;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
   }
 
   .weather-day {
-    width: 100%;
     border-radius: 0;
-    padding: 30px;
-    height: 600px;
-  }
 
-  .weather-postcript-container {
-    top: 420px;
-    right: 50px;
   }
 
   .weather-hour {
-    width: 100%;
-    height: auto;
-    padding: 30px 30px;
     border-radius: 0;
   }
-
-  .weather-hour-cards {
-    gap: 25px;
-    height: auto;
-    padding: 20px 0px;
-  }
-
-  .weather-date {
-    row-gap: 15px;
-    column-gap: 100px;
-    justify-content: center;
-  }
-
-  .weather-hour-title {
-    font-size: 28px;
-    margin-top: 0;
-  }
-
-  .content-postscript {
-    font-size: 20px;
-  }
-
-  .weather-content-title {
-    font-size: 20px;
-  }
-
-  .hour-title {
-    font-size: 22px;
-  }
-
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -88,8 +45,8 @@
   }
 
   .weather-postcript-container {
-    top: 420px;
-    right: 50px;
+    top: 450px;
+    right: 100px;
   }
 
   .weather-hour {
@@ -191,6 +148,10 @@
     font-size: 22px;
   }
 
+  .weather-postcript-container {
+    top: 450px;
+  }
+
 }
 
 @media (max-width: 576px) and (min-width: 400px) {
@@ -220,7 +181,7 @@
   }
 
   .weather-postcript-container {
-    top: 420px;
+    top: 450px;
     right: 50px;
   }
 
@@ -285,7 +246,7 @@
   }
 
   .weather-postcript-container {
-    top: 440px;
+    top: 450px;
     right: 50px;
   }
 
@@ -323,7 +284,11 @@
     font-size: 22px;
   }
 
-  .hour-weather{
+  .hour-weather {
     font-size: 10px;
+  }
+
+  .weather-main-text h2 {
+    font-size: 26px;
   }
 }

@@ -49,9 +49,11 @@ const Weather = () => {
 
           <div className="weather-main">
             <h2 className='weather-main-title'>{weather.current.temp_c}°</h2>
-            <h3 className='weather-main-text'>{weather.current.condition.text}
+            <div className='weather-main-text'>
+              <h2>{weather.current.condition.text}</h2>
               <img src={weather.current.condition.icon} />
-            </h3>
+            </div>
+            <div />
 
             <div className="weather-postcript-container">
               <h2 className="weather-postscript">
@@ -94,8 +96,8 @@ const Weather = () => {
           <div className="weather-hour-cards">
             <h2 className='hour-title'>Hourly Forecast</h2>
             {
-              weather.forecast.forecastday[0].hour.map((value, index ) => {
-                if (index == 6 ) {
+              weather.forecast.forecastday[0].hour.map((value, index) => {
+                if (index == 6) {
                   return (
                     <div className="weather-card" key={value.time}>
                       <h4 className='hour-time'> 6 AM</h4>
