@@ -1,30 +1,48 @@
-@media (max-width: 1366px) and (min-width: 1200px) {
-  .weather {
-    padding: 30px 40px;
-  }
-}
+@media (max-width: 1366px) and (min-width: 1200px) {}
 
 @media (max-width: 1200px) and (min-width: 992px) {
 
   .weather {
     padding: 0;
+    height: auto;
   }
 
   .weather-back {
     border-radius: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
   }
 
   .weather-day {
+    width: 100%;
     border-radius: 0;
+    padding: 30px;
+    height: 600px;
+  }
 
+  .weather-postcript-container {
+    top: 450px;
+    right: 100px;
   }
 
   .weather-hour {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
     border-radius: 0;
   }
 
   .weather-hour-cards {
-    gap: 10px;
+    gap: 25px;
+    height: auto;
+    padding: 20px 0px;
+  }
+
+  .weather-date {
+    row-gap: 15px;
+    column-gap: 100px;
+    justify-content: center;
   }
 }
 
@@ -72,23 +90,6 @@
     justify-content: center;
   }
 
-  .weather-hour-title {
-    font-size: 28px;
-    margin-top: 0;
-  }
-
-  .content-postscript {
-    font-size: 20px;
-  }
-
-  .weather-content-title {
-    font-size: 20px;
-  }
-
-  .hour-title {
-    font-size: 22px;
-  }
-
 }
 
 @media (max-width: 768px) and (min-width: 576px) {
@@ -117,39 +118,21 @@
   }
 
   .weather-hour {
-
     width: 100%;
-    height: 600px;
+    height: 640px;
     padding: 30px 30px 50px;
     border-radius: 0;
   }
 
   .weather-hour-cards {
     gap: 25px;
-    padding: 20px 70px;
+    padding: 20px 100px;
   }
 
   .weather-date {
     row-gap: 15px;
     column-gap: 100px;
     justify-content: center;
-  }
-
-  .weather-hour-title {
-    font-size: 28px;
-    margin-top: 0;
-  }
-
-  .content-postscript {
-    font-size: 20px;
-  }
-
-  .weather-content-title {
-    font-size: 20px;
-  }
-
-  .hour-title {
-    font-size: 22px;
   }
 
   .weather-postcript-container {
@@ -201,22 +184,6 @@
     padding: 20px 50px;
   }
 
-  .weather-hour-title {
-    font-size: 28px;
-    margin-top: 0;
-  }
-
-  .content-postscript {
-    font-size: 20px;
-  }
-
-  .weather-content-title {
-    font-size: 20px;
-  }
-
-  .hour-title {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 400px) and (min-width: 280px) {
@@ -277,10 +244,6 @@
   }
 
   .content-postscript {
-    font-size: 20px;
-  }
-
-  .weather-content-title {
     font-size: 20px;
   }
 

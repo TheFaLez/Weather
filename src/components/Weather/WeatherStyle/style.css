@@ -1,13 +1,13 @@
 .weather {
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 65px 120px;
 }
 
 .weather-back {
-  width: 1280px;
+  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +23,8 @@
   position: relative;
   background-image: url(./18667-orig.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .weather-hour {
