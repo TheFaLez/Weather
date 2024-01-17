@@ -3,10 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 65px 120px;
 }
 
 .weather-back {
-  width: 100%;
+  width: 1280px;
   display: flex;
   align-items: center;
   justify-content: center;
