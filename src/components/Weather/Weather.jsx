@@ -95,7 +95,6 @@ const Weather = () => {
             <h2 className='hour-title'>Hourly Forecast</h2>
             {
               weather.forecast.forecastday[0].hour.map((value, index ) => {
-                console.log(index);
                 if (index == 6 ) {
                   return (
                     <div className="weather-card" key={value.time}>
