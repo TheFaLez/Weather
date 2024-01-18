@@ -81,6 +81,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .weather-main-title {
@@ -100,7 +101,7 @@
 
 .weather-postcript-container {
   position: absolute;
-  top: 200px;
+  top: 300px;
   right: 120px;
   display: flex;
   flex-direction: column;
