@@ -28,6 +28,21 @@ const Weather = () => {
     setSearchState('')
   }
 
+  const searchKey = (e) => {
+    if (e.key == "Enter") {
+      fetch(`https://api.weatherapi.com/v1/forecast.json?key=fa1e04a97a1048989cb20516241501%20&q=${searchState}&aqi=no`)
+      .then((response) => {
+        if (response.ok) {
+          dispatch(fetchWeather(searchState))
+        }
+        else {
+          return
+        }
+      })
+    setSearchState('')
+    }
+  }
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -42,7 +57,7 @@ const Weather = () => {
             <h3 data-aos="fade-right">{weather.location.name}</h3>
             <h4 data-aos="fade-right">{weather.forecast.forecastday[0].date}</h4>
             <div className="search-content">
-              <input data-aos="fade-right" onChange={seach} value={searchState} className='weather-date-input' type="text" placeholder='Search...' />
+              <input data-aos="fade-right" onKeyDown={searchKey} onChange={seach} value={searchState} className='weather-date-input' type="text" placeholder='Search...' />
               <i onClick={searchBtn} className="fa-solid fa-magnifying-glass searchicon"></i>
             </div>
           </div>
